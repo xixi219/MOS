@@ -36,19 +36,19 @@ def main(args):
     # args = parser.parse_args()
 
     ## 1. download the base model from fairseq
-    if not os.path.exists('fairseq/wav2vec_small.pt'):
-        os.system('mkdir -p fairseq')
-        os.system('wget https://dl.fbaipublicfiles.com/fairseq/wav2vec/wav2vec_small.pt -P fairseq')
-        os.system('wget https://raw.githubusercontent.com/pytorch/fairseq/main/LICENSE -P fairseq/')
+    if not os.path.exists('mos_finetune_ssl_main/fairseq/wav2vec_small.pt'):
+        os.system('mkdir -p mos_finetune_ssl_main/fairseq')
+        os.system('wget https://dl.fbaipublicfiles.com/fairseq/wav2vec/wav2vec_small.pt -P mos_finetune_ssl_main/fairseq')
+        os.system('wget https://raw.githubusercontent.com/pytorch/fairseq/main/LICENSE -P mos_finetune_ssl_main/fairseq/')
 
     ## 2. download the finetuned checkpoint
-    if not os.path.exists('pretrained/ckpt_w2vsmall'):
-        os.system('mkdir -p pretrained')
+    if not os.path.exists('mos_finetune_ssl_main/pretrained/ckpt_w2vsmall'):
+        os.system('mkdir -p mos_finetune_ssl_main/pretrained')
         os.system('wget https://zenodo.org/record/6785056/files/ckpt_w2vsmall.tar.gz')
         os.system('tar -zxvf ckpt_w2vsmall.tar.gz')
-        os.system('mv ckpt_w2vsmall pretrained/')
+        os.system('mv ckpt_w2vsmall mos_finetune_ssl_main/pretrained/')
         os.system('rm ckpt_w2vsmall.tar.gz')
-        os.system('cp fairseq/LICENSE pretrained/')
+        os.system('cp mos_finetune_ssl_main/fairseq/LICENSE mos_finetune_ssl_main/pretrained/')
     
     cp_path = args.fairseq_base_model
     my_checkpoint = args.finetuned_checkpoint
