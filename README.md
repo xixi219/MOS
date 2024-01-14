@@ -34,4 +34,5 @@ python wav_to_csv.py
 ```
 
 ## Result
-![For 1310 test audio files from LJSpeech, we applied various levels of noise at different SNR (Signal-to-Noise Ratio) levels. The distribution of the MOS (Mean Opinion Score) for this batch of audio files is shown in the following chart.](./mos_distribution.png)
+For 1310 test audio files from LJSpeech, we applied various levels of noise at different SNR (Signal-to-Noise Ratio) levels. The distribution of the MOS (Mean Opinion Score) for this batch of audio files is shown in the following chart.
+![Alt Text](./mos_distribution.png)
