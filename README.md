@@ -6,9 +6,7 @@ This MOS (Mean Opinion Score) system integrates components from various sources:
 4. SIGMOS (https://github.com/microsoft/SIG-Challenge/tree/main/ICASSP2024/sigmos): 7 scores
 
 For each audio file, the system utilizes the librosa library to read it as a waveform.
-
 Subsequently, it performs inference for four MOS metrics, generating 20 scores in total, and then saves the results in a CSV file.
-
 Note that MOSSSL must run on GPU.
 
 ## Setting up the Environment
