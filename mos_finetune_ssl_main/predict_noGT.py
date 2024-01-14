@@ -34,6 +34,21 @@ def main(args):
     # parser.add_argument('--finetuned_checkpoint', type=str, required=True, help='Path to finetuned MOS prediction checkpoint.')
     # parser.add_argument('--outfile', type=str, required=False, default='answer.txt', help='Output filename for your answer.txt file for submission to the CodaLab leaderboard.')
     # args = parser.parse_args()
+
+    ## 1. download the base model from fairseq
+    if not os.path.exists('fairseq/wav2vec_small.pt'):
+        os.system('mkdir -p fairseq')
+        os.system('wget https://dl.fbaipublicfiles.com/fairseq/wav2vec/wav2vec_small.pt -P fairseq')
+        os.system('wget https://raw.githubusercontent.com/pytorch/fairseq/main/LICENSE -P fairseq/')
+
+    ## 2. download the finetuned checkpoint
+    if not os.path.exists('pretrained/ckpt_w2vsmall'):
+        os.system('mkdir -p pretrained')
+        os.system('wget https://zenodo.org/record/6785056/files/ckpt_w2vsmall.tar.gz')
+        os.system('tar -zxvf ckpt_w2vsmall.tar.gz')
+        os.system('mv ckpt_w2vsmall pretrained/')
+        os.system('rm ckpt_w2vsmall.tar.gz')
+        os.system('cp fairseq/LICENSE pretrained/')
     
     cp_path = args.fairseq_base_model
     my_checkpoint = args.finetuned_checkpoint
