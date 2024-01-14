@@ -32,3 +32,6 @@ cd MOS
 ```
 python wav_to_csv.py
 ```
+
+## Result
+![Alt Text](./mos_distribution.png)
