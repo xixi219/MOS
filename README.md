@@ -4,6 +4,7 @@ This MOS (Mean Opinion Score) system integrates components from various sources:
 2. NISQA (https://github.com/gabrielmittag/NISQA)
 3. MOSSSL (https://github.com/nii-yamagishilab/mos-finetune-ssl)
 4. SIGMOS (https://github.com/microsoft/SIG-Challenge/tree/main/ICASSP2024/sigmos)
+
 For each audio file, the system utilizes the librosa library to read it as a waveform.
 Subsequently, it performs inference for four MOS metrics, generating 20 scores in total, and then saves the results in a CSV file.
 
