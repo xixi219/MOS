@@ -24,9 +24,9 @@ pip install pandas seaborn librosa onnxruntime-gpu fairseq tensorboardX
 ```
 
 ## Running Inference
-1. Navigate to the "_mos" directory:
+1. Navigate to the "MOS" directory:
 ```
-cd _mos
+cd MOS
 ```
 2. Execute the wav_to_csv.py script for inference:
 ```
