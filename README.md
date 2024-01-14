@@ -19,7 +19,7 @@ conda activate mos
 ```
 3. Install required packages using pip:
 ```
-pip install pandas seaborn librosa onnxruntime-gpu fairseq
+pip install pandas seaborn librosa onnxruntime-gpu fairseq tensorboardX
 ```
 
 ## Running Inference
