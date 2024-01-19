@@ -57,6 +57,6 @@ For the different train/test audio files:
 
   from LJSpeech, we applied various levels of noise at different SNR (Signal-to-Noise Ratio) levels.
 
-The distribution of the MOS (Mean Opinion Score) for this batch of audio files is shown in the following chart.
+The distribution of Mean Opinion Scores for these batches of audio files is depicted in the chart through histplot and kdeplot.
 ![mos_distribution_histplot.png](./mos_distribution_histplot.png)
 ![mos_distribution_kdeplot.png](./mos_distribution_kdeplot.png)
