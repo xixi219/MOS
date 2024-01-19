@@ -60,8 +60,8 @@ For the different train/test audio files:
 - 1310 SNR_15 audio
 - 11790 clean audio
 
-from LJSpeech, we applied various levels of noise at different SNR (Signal-to-Noise Ratio) levels.
+  from LJSpeech, we applied various levels of noise at different SNR (Signal-to-Noise Ratio) levels.
 
-The distribution of Mean Opinion Scores for these batches of audio files is depicted in the chart through histplot and kdeplot.
+The distribution of Mean Opinion Scores for these batches of audio files, is depicted in the chart through histplot and kdeplot.
 ![mos_distribution_histplot.png](./mos_distribution_histplot.png)
 ![mos_distribution_kdeplot.png](./mos_distribution_kdeplot.png)
