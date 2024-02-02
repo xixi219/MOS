@@ -40,9 +40,9 @@ pip install pandas seaborn librosa onnxruntime-gpu fairseq tensorboardX
 cd MOS
 ```
 
-2. Update the 'wavdir' variable in '/MOS/wav_to_csv.py' to point to your inference directory path.
+2. Update `wavdir` in `/MOS/wav_to_csv.py` to point to your inference directory path.
 
-3. Execute the wav_to_csv.py script for inference:
+3. Execute the `wav_to_csv.py` script for inference:
 
 ```
 python wav_to_csv.py
@@ -50,7 +50,7 @@ python wav_to_csv.py
 
 ## Result
 
-If you wish to visualize the distribution, please execute the 'csv_distribution.ipynb' notebook.
+If you wish to visualize the distribution, please execute the `csv_distribution.ipynb` notebook.
 
 For the different train/test audio files:
 
