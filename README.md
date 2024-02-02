@@ -26,7 +26,7 @@ conda create -n mos python=3.10
 conda activate mos
 ```
 
-3. Install required packages using pip:
+3. Install required packages:
 
 ```
 pip install pandas seaborn librosa onnxruntime-gpu fairseq tensorboardX
