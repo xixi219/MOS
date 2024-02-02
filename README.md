@@ -40,7 +40,7 @@ conda install --file requirement.txt
 
 ## Running Inference
 
-1. Update `wavdir` in `MOS/wav_to_csv.py` to point to your inference directory path.
+1. Update inference directory at `MOS/wav_to_csv.py`, `wavdir`.
 
 2. Execute inference:
 
