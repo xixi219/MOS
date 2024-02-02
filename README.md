@@ -32,19 +32,20 @@ conda activate mos
 pip install pandas seaborn librosa onnxruntime-gpu fairseq tensorboardX
 ```
 
+or
+
+```
+conda install --file requirement.txt
+```
+
 ## Running Inference
 
-1. Navigate to the "MOS" directory:
+1. Update `wavdir` in `MOS/wav_to_csv.py` to point to your inference directory path.
+
+2. Execute inference:
 
 ```
 cd MOS
-```
-
-2. Update `wavdir` in `/MOS/wav_to_csv.py` to point to your inference directory path.
-
-3. Execute the `wav_to_csv.py` script for inference:
-
-```
 python wav_to_csv.py
 ```
 
