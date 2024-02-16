@@ -29,7 +29,7 @@ conda activate mos
 3. Install required packages:
 
 ```
-conda install -c conda-forge --file requirement.txt
+conda install -c conda-forge --file requirements.txt
 ```
 
 ## Running Inference
