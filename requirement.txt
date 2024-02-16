@@ -1,6 +1,6 @@
 pandas
 seaborn
+onnxruntime
 librosa
-onnxruntime-gpu
 fairseq
 tensorboardX

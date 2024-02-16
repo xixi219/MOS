@@ -29,13 +29,7 @@ conda activate mos
 3. Install required packages:
 
 ```
-pip install pandas seaborn librosa onnxruntime-gpu fairseq tensorboardX
-```
-
-or
-
-```
-conda install --file requirement.txt
+conda install -c conda-forge --file requirement.txt
 ```
 
 ## Running Inference
